@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Email My PC - 远程监控电脑，也许一切只需要一封邮件。">
+    <meta name="keywords" content="email my pc,email,安全,家长,开源,截图,控制,摄像头,照片,监控,网络,远程,邮箱,远控">
+    <meta name="viewport" content="width=device-width">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon.png">
+    <link rel="shortcut icon" href="images/icon.png">
+    <title>Email My PC</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body data-ng-app="publicApp" data-ng-controller="RootCtrl" class="ng-scope">
+    <div class="fade background in"></div>
+    <header role="navigation" class="fade header ng-scope in">
+      <meta charset="utf-8" class="ng-scope">
+      <div class="container ng-scope" data-ng-init="selector=&#39;header&#39;">
+        <div id="logo-container">
+          <a id="logo" href="/">
+            <i class="fa fa-envelope fa-fw" style="font-size:3em;color:#ccd8db;vertical-align:middle;"></i>&nbsp;
+            <img alt="Email My PC" src="images/logo.svg" style="vertical-align:middle;"></a></div>
+        <hr class="expand">
+        <nav>
+          <ol class="list-unstyled list-inline">
+            <li class="nav-link active" style="overflow: visible;" id="tab1">
+              <a href="javascript:void(0);" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">封面</a></li>
+            <li class="nav-link" style="overflow: visible;" id="tab2">
+              <a href="javascript:void(0);" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">遥控关机</a></li>
+            <li class="nav-link" style="overflow: visible;" id="tab3">
+              <a href="javascript:void(0);" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">监视屏幕</a></li>
+            <li class="nav-link" style="overflow: visible;" id="tab4">
+              <a href="javascript:void(0);" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">监视摄像头</a></li>
+            <li class="nav-link" style="overflow: visible;" id="tab5">
+              <a href="javascript:void(0);" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">开机提醒</a></li>
+            <li class="nav-link" style="overflow: visible;" id="tab6">
+              <a href="javascript:void(0);" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">执行快捷键</a></li>
+            <li class="nav-link" style="overflow: visible;" id="tab7">
+              <a href="javascript:void(0);" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">可扩展性</a></li>
+            <li class="nav-link" style="overflow: visible;" id="tab8">
+              <a href="javascript:void(0);" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">易用性</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <main id="about">
+      <div class="main container ng-scope" id="block1" data-ui-view="">
+        <section class="about fade ng-scope in">
+          <h1>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">远程监控电脑</span>
+            <span class="large-block" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">也许一切只需要一封邮件</span>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Maybe all you have to do is to send an e-mail</span></h1>
+          <p class="lead">
+            <a class="btn btn-lg btn-primary" href="http://download.jackeriss.com/works/Email_My_PC_1.2.3.zip" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 50% 50% 0px;">立即下载</a>&nbsp;&nbsp;
+            <span style="color:#ccd8db;vertical-align:middle;">V 1.2.3&nbsp;
+              <a href="https://jackeriss.github.io/doc/Email_My_PC_Guide/" target="_blank" style="text-decoration:none;">使用指南</a></span>
+          </p>
+        </section>
+      </div>
+      <div class="main container ng-scope" id="block2" data-ui-view="">
+        <section class="about fade ng-scope in">
+          <h1>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">住在上铺的兄弟</span>
+            <span class="large-block" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">你再也不用亲自下床关电脑了！</span>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">You don't have to shutdown your PC on your own anymore!</span></h1>
+          <p class="lead">
+            <a class="btn btn-lg btn-primary" href="http://download.jackeriss.com/works/Email_My_PC_1.2.3.zip" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 50% 50% 0px;">立即下载</a>&nbsp;&nbsp;
+            <span style="color:#ccd8db;vertical-align:middle;">V 1.2.3&nbsp;
+              <a href="https://jackeriss.github.io/doc/Email_My_PC_Guide/" target="_blank" style="text-decoration:none;">使用指南</a></span>
+          </p>
+        </section>
+      </div>
+      <div class="main container ng-scope" id="block3" data-ui-view="">
+        <section class="about fade ng-scope in">
+          <h1>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">你用实验室的电脑渲染一段视频</span>
+            <span class="large-block" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">离开后想随时知道渲染的进度</span>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">You want to know where is it in the progress at that moment</span></h1>
+          <p class="lead">
+            <a class="btn btn-lg btn-primary" href="http://download.jackeriss.com/works/Email_My_PC_1.2.3.zip" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 50% 50% 0px;">立即下载</a>&nbsp;&nbsp;
+            <span style="color:#ccd8db;vertical-align:middle;">V 1.2.3&nbsp;
+              <a href="https://jackeriss.github.io/doc/Email_My_PC_Guide/" target="_blank" style="text-decoration:none;">使用指南</a></span>
+          </p>
+        </section>
+      </div>
+      <div class="main container ng-scope" id="block4" data-ui-view="">
+        <section class="about fade ng-scope in">
+          <h1>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">想要随时看到监控</span>
+            <span class="large-block" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">只图一个安心</span>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">You want be able to see the monitor anytime just to feel safe</span></h1>
+          <p class="lead">
+            <a class="btn btn-lg btn-primary" href="http://download.jackeriss.com/works/Email_My_PC_1.2.3.zip" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 50% 50% 0px;">立即下载</a>&nbsp;&nbsp;
+            <span style="color:#ccd8db;vertical-align:middle;">V 1.2.3&nbsp;
+              <a href="https://jackeriss.github.io/doc/Email_My_PC_Guide/" target="_blank" style="text-decoration:none;">使用指南</a></span>
+          </p>
+        </section>
+      </div>
+      <div class="main container ng-scope" id="block5" data-ui-view="">
+        <section class="about fade ng-scope in">
+          <h1>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">担心别人乱用你的电脑？</span>
+            <span class="large-block" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">害怕小孩儿偷偷玩电脑？</span>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Be worried about others using your computer?</span></h1>
+          <p class="lead">
+            <a class="btn btn-lg btn-primary" href="http://download.jackeriss.com/works/Email_My_PC_1.2.3.zip" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 50% 50% 0px;">立即下载</a>&nbsp;&nbsp;
+            <span style="color:#ccd8db;vertical-align:middle;">V 1.2.3&nbsp;
+              <a href="https://jackeriss.github.io/doc/Email_My_PC_Guide/" target="_blank" style="text-decoration:none;">使用指南</a></span>
+          </p>
+        </section>
+      </div>
+      <div class="main container ng-scope" id="block6" data-ui-view="">
+        <section class="about fade ng-scope in">
+          <h1>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">想要远程暂停任务？没问题！</span>
+            <span class="large-block" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">快捷键使你获得更加精细的控制！</span>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">You will have much more power using shortcut buttons!</span></h1>
+          <p class="lead">
+            <a class="btn btn-lg btn-primary" href="http://download.jackeriss.com/works/Email_My_PC_1.2.3.zip" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 50% 50% 0px;">立即下载</a>&nbsp;&nbsp;
+            <span style="color:#ccd8db;vertical-align:middle;">V 1.2.3&nbsp;
+              <a href="https://jackeriss.github.io/doc/Email_My_PC_Guide/" target="_blank" style="text-decoration:none;">使用指南</a></span>
+          </p>
+        </section>
+      </div>
+      <div class="main container ng-scope" id="block7" data-ui-view="">
+        <section class="about fade ng-scope in">
+          <h1>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">你甚至可以用它</span>
+            <span class="large-block" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">执行任何CMD命令</span>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">You can even run any command by sending e-mails to it</span></h1>
+          <p class="lead">
+            <a class="btn btn-lg btn-primary" href="http://download.jackeriss.com/works/Email_My_PC_1.2.3.zip" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 50% 50% 0px;">立即下载</a>&nbsp;&nbsp;
+            <span style="color:#ccd8db;vertical-align:middle;">V 1.2.3&nbsp;
+              <a href="https://jackeriss.github.io/doc/Email_My_PC_Guide/" target="_blank" style="text-decoration:none;">使用指南</a></span>
+          </p>
+        </section>
+      </div>
+      <div class="main container ng-scope" id="block8" data-ui-view="">
+        <section class="about fade ng-scope in">
+          <h1>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">手机无需安装任何额外APP</span>
+            <span class="large-block" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">通过微信即可发邮件监控电脑</span>
+            <span class="eyebrow" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">You can use WeChat to send the e-mail on your phone</span></h1>
+          <p class="lead">
+            <a class="btn btn-lg btn-primary" href="http://download.jackeriss.com/works/Email_My_PC_1.2.3.zip" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: 50% 50% 0px;">立即下载</a>&nbsp;&nbsp;
+            <span style="color:#ccd8db;vertical-align:middle;">V 1.2.3&nbsp;
+              <a href="https://jackeriss.github.io/doc/Email_My_PC_Guide/" target="_blank" style="text-decoration:none;">使用指南</a></span>
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="fade footer ng-scope in slide-down">
+      <meta charset="utf-8" class="ng-scope">
+      <title class="ng-scope">Footer</title>
+      <div class="container ng-scope" data-ng-init="selector=&#39;footer&#39;">
+        <div class="row">
+          <div id="contact" class="col-xs-12 col-sm-6">
+            <h6>contact</h6>
+            <ol class="list-unstyled list-inline">
+              <li>
+                <a href="http://weibo.com/Jackeriss" target="_blank">微博</a></li>
+              <li>
+                <a href="https://github.com/Jackeriss" target="_blank">GitHub</a></li>
+              <li>
+                <a href="mailto:i@jackeriss.com" target="_blank">Email</a></li>
+            </ol>
+          </div>
+          <div id="colophon" class="col-sm-6 text-right hidden-xs">
+            <h6>Auther</h6>©
+            <a href="//www.jackeriss.com" target="_blank">Jackeriss</a>2016 All rights reserved</div></div>
+      </div>
+    </footer>
+  </body>
+</html>
